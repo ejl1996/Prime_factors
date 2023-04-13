@@ -42,12 +42,12 @@ def main():
     try:
         if isinstance(value, int):
             factors = prime_factors(value)
+            print(convert_to_tuple(factors))
         else:
             raise ValueError
     except ValueError:
         print("Please enter an integer")
     #factors = primefactors(value)
-    print(tuple(factors))
 
 
 if __name__ == "__main__":
