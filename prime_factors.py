@@ -3,7 +3,7 @@ import doctest
 
 def check_for_primality(value):
     try:
-        value == int(value)
+        value == int(value) is True
     except ValueError:
         print("Enter an prime value")
     else:
