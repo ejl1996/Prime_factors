@@ -14,6 +14,9 @@ def primefactors(value):
     >>> value = 15 
     >>> primefactors(value)
     [3, 5]
+    >>> value = 36
+    >>> primefactors(value)
+    [2, 2, 3, 3]
     """
     # even number divisible
     divisor = 2
