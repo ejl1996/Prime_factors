@@ -32,6 +32,14 @@ def primefactors(value):
     return factors
 
 def convert(factors):
+    """
+    >>> factors = [3, 5]
+    >>> convert(factors)
+    (3, 5)
+    >>> factors = [2, 2, 3, 3]
+    >>> convert(factors)
+    (2, 2, 3, 3)
+    """
     return tuple(factors)
 
 def main():
