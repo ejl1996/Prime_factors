@@ -4,10 +4,10 @@ import doctest
 def prime_factors(value):
     """
     >>> value = 15
-    >>> primefactors(value)
+    >>> prime_factors(value)
     [3, 5]
     >>> value = 36
-    >>> primefactors(value)
+    >>> prime_factors(value)
     [2, 2, 3, 3]
     """
     divisor = 2
@@ -26,10 +26,10 @@ def prime_factors(value):
 def convert_to_tuple(factors):
     """
     >>> factors = [3, 5]
-    >>> convert(factors)
+    >>> convert_to_tuple(factors)
     (3, 5)
     >>> factors = [2, 2, 3, 3]
-    >>> convert(factors)
+    >>> convert_to_tuple(factors)
     (2, 2, 3, 3)
     """
     return tuple(factors)
