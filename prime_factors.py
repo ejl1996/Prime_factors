@@ -1,7 +1,7 @@
 #import doctest
 
 
-def primefactors(value):
+def prime_factors(value):
     """
     #>>> value = 15
     #>>> primefactors(value)
@@ -41,7 +41,7 @@ def main():
     factors = []
     try:
         if isinstance(value, int):
-            factors = primefactors(value)
+            factors = prime_factors(value)
         else:
             raise ValueError
     except ValueError:
