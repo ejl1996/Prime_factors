@@ -1,29 +1,33 @@
-import math
 
-# A function to print all prime factors of
-# a given number n
-def primeFactors(num):
+#import doctest
 
-    # Print the number of two's that divide n
-    while num % 2 == 0:
-        print 2,
-        num = num / 2
+def primefactors(value):
+    # even number divisible
+    divisor = 2
+    factors = []
+    while divisor * divisor <= value:
+        if value % divisor:
+            divisor += 1
+        else:
+            value //= divisor
+            factors.append(divisor)
+    if value > 1:
+        factors.append(value)
+    return factors
 
-    # n must be odd at this point
-    # so a skip of 2 ( i = i + 2) can be used
-    for i in range(3,int(math.sqrt(num))+1,2):
+def main():
+    #doctest.testmod(verbose=True)
+    #try:
+        #value = int(input('Enter a number : '))
+    #except(ValueError):
+        #print('Please enter an integer !')
+    #else:
+        #print("Thank you for entering an integer")
 
-        # while i divides n , print i and divide n
-        while num % i== 0:
-            print i,
-            num = num / i
+    value = 216
+    primefactors(value)
 
-    # Condition if n is a prime
-    # number greater than 2
-    if num > 2:
-        print num
 
-# Driver Program to test above function
 
-n = 315
-primeFactors(n)
+if __name__ == "__main__":
+    main()
