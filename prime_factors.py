@@ -15,6 +15,9 @@ def primefactors(value):
         factors.append(value)
     return factors
 
+def convert(factors):
+    return tuple(factors)
+
 def main():
     #doctest.testmod(verbose=True)
     #try:
@@ -25,7 +28,8 @@ def main():
         #print("Thank you for entering an integer")
 
     value = 216
-    primefactors(value)
+    factors = primefactors(value)
+    print(tuple(factors))
 
 
 
