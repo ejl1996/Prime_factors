@@ -1,13 +1,13 @@
-#import doctest
+import doctest
 
 
 def prime_factors(value):
     """
-    #>>> value = 15
-    #>>> primefactors(value)
+    >>> value = 15
+    >>> primefactors(value)
     [3, 5]
-    #>>> value = 36
-    #>>> primefactors(value)
+    >>> value = 36
+    >>> primefactors(value)
     [2, 2, 3, 3]
     """
     divisor = 2
@@ -25,18 +25,18 @@ def prime_factors(value):
 
 def convert_to_tuple(factors):
     """
-    #>>> factors = [3, 5]
-    #>>> convert(factors)
+    >>> factors = [3, 5]
+    >>> convert(factors)
     (3, 5)
-    #>>> factors = [2, 2, 3, 3]
-    #>>> convert(factors)
+    >>> factors = [2, 2, 3, 3]
+    >>> convert(factors)
     (2, 2, 3, 3)
     """
     return tuple(factors)
 
 
 def main():
-    #doctest.testmod(verbose=True)
+    doctest.testmod(verbose=True)
     value = "hi"
     factors = []
     try:
@@ -47,7 +47,6 @@ def main():
             raise ValueError
     except ValueError:
         print("Please enter an integer")
-    #factors = primefactors(value)
 
 
 if __name__ == "__main__":
