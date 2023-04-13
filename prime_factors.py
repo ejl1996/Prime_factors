@@ -1,13 +1,13 @@
 import doctest
 
 
-def check_for_primality(value):
+def check_value_is_integer(value):
     try:
         value == int(value)
     except ValueError:
-        print("Enter a prime value")
+        print("Please enter an integer")
     else:
-        print("Thank you for entering a prime value")
+        print("Thank you for entering an integer")
 
 
 def primefactors(value):
