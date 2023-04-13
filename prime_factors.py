@@ -1,6 +1,14 @@
 
 #import doctest
 
+def check_for_primality(value):
+    try:
+        value == int(value)
+    except ValueError:
+        print("Enter an prime value")
+    else:
+        print("Thank you for entering a prime value")
+
 def primefactors(value):
     # even number divisible
     divisor = 2
@@ -26,8 +34,9 @@ def main():
         #print('Please enter an integer !')
     #else:
         #print("Thank you for entering an integer")
-
     value = 216
+    check_for_primality(value)
+    primefactors(value)
     factors = primefactors(value)
     print(tuple(factors))
 
