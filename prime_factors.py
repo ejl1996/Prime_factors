@@ -23,7 +23,7 @@ def primefactors(value):
     return factors
 
 
-def convert(factors):
+def convert_to_tuple(factors):
     """
     #>>> factors = [3, 5]
     #>>> convert(factors)
