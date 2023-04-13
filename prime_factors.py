@@ -10,7 +10,6 @@ def primefactors(value):
     #>>> primefactors(value)
     [2, 2, 3, 3]
     """
-    # even number divisible
     divisor = 2
     factors = []
     while divisor * divisor <= value:
