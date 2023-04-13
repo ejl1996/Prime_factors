@@ -1,5 +1,5 @@
-
 import doctest
+
 
 def check_for_primality(value):
     try:
@@ -8,6 +8,7 @@ def check_for_primality(value):
         print("Enter an prime value")
     else:
         print("Thank you for entering a prime value")
+
 
 def primefactors(value):
     """
@@ -31,6 +32,7 @@ def primefactors(value):
         factors.append(value)
     return factors
 
+
 def convert(factors):
     """
     >>> factors = [3, 5]
@@ -42,6 +44,7 @@ def convert(factors):
     """
     return tuple(factors)
 
+
 def main():
     doctest.testmod(verbose=True)
     value = 216
@@ -49,7 +52,6 @@ def main():
     primefactors(value)
     factors = primefactors(value)
     print(tuple(factors))
-
 
 
 if __name__ == "__main__":
