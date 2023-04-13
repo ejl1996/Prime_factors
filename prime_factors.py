@@ -48,7 +48,7 @@ def convert(factors):
 def main():
     doctest.testmod(verbose=True)
     value = 216
-    check_for_primality(value)
+    check_value_is_integer(value)
     primefactors(value)
     factors = primefactors(value)
     print(tuple(factors))
