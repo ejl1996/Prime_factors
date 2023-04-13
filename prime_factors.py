@@ -5,7 +5,7 @@ def check_for_primality(value):
     try:
         value == int(value) is True
     except ValueError:
-        print("Enter an prime value")
+        print("Enter a prime value")
     else:
         print("Thank you for entering a prime value")
 
