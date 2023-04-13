@@ -1,22 +1,13 @@
-import doctest
-
-
-def check_value_is_integer(value):
-    try:
-        value == int(value)
-    except ValueError:
-        print("Please enter an integer")
-    else:
-        print("Thank you for entering an integer")
+#import doctest
 
 
 def primefactors(value):
     """
-    >>> value = 15 
-    >>> primefactors(value)
+    #>>> value = 15
+    #>>> primefactors(value)
     [3, 5]
-    >>> value = 36
-    >>> primefactors(value)
+    #>>> value = 36
+    #>>> primefactors(value)
     [2, 2, 3, 3]
     """
     # even number divisible
@@ -35,22 +26,28 @@ def primefactors(value):
 
 def convert(factors):
     """
-    >>> factors = [3, 5]
-    >>> convert(factors)
+    #>>> factors = [3, 5]
+    #>>> convert(factors)
     (3, 5)
-    >>> factors = [2, 2, 3, 3]
-    >>> convert(factors)
+    #>>> factors = [2, 2, 3, 3]
+    #>>> convert(factors)
     (2, 2, 3, 3)
     """
     return tuple(factors)
 
 
 def main():
-    doctest.testmod(verbose=True)
-    value = 216
-    check_value_is_integer(value)
-    primefactors(value)
-    factors = primefactors(value)
+    #doctest.testmod(verbose=True)
+    value = "hi"
+    factors = []
+    try:
+        if isinstance(value, int):
+            factors = primefactors(value)
+        else:
+            raise ValueError
+    except ValueError:
+        print("Please enter an integer")
+    #factors = primefactors(value)
     print(tuple(factors))
 
 
